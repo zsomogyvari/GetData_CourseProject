@@ -1,0 +1,104 @@
+
+The Average_variables.txt file includes the average an standard deviation values for the 3-axial linear body acceleration and 3-axial angular velocity data measured in the "Human Activity Recognition Using Smartphones" experiment. (Details below in the Appendix)
+
+The file was created by run_analysis.R code, using the following data files:
+	subject_train.txt        ##Subjects
+	y_train.txt              ##Activities
+	X_train.txt              ##Data
+                  
+	subject_test.txt         ##Subjects
+	y_test.txt               ##Activities
+	X_test.txt               ##Data
+
+
+
+
+
+Description of the variables:
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
+
+Average_variables.txt consequently contains 30*6 observations, each of the observations corresponding to a certain volunteer and a certain activity.
+For each observation there are 2*6 values measured.
+
+
+Subject 
+	Identifier number of the volunteers. (1-30)                          
+
+Activity
+	Type of activity with six levels(WALKING, WALKING_UPSTAIRS, 	WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
+
+mean(Body_acceleration_mean_X)
+	X coordinate of the body acceleration averaged for each 	activity and each subject. [m/s^2] 
+
+mean(Body_acceleration_mean_Y)
+	Y coordinate of the body acceleration averaged for each 	activity and each subject. [m/s^2] 
+
+mean(Body_acceleration_mean_Z)
+	Z coordinate of the body acceleration averaged for each 	activity and each subject. [m/s^2]  
+
+mean(Body_acceleration_stdev_X)
+	Standard deviation of the X coordinate of the body 	acceleration averaged for each activity and each subject. 	[m/s^2]   
+
+mean(Body_acceleration_stdev_Y)
+	Standard deviation of the Y coordinate of the body 	acceleration averaged for each activity and each subject. 
+	[m/s^2]   
+
+mean(Body_acceleration_stdev_Z)
+	Standard deviation of the Z coordinate of the body 	acceleration averaged for each activity and each subject. 
+	[m/s^2]     
+
+mean(Body_angularVelocity_mean_X)
+	X coordinate of the body angular velocity averaged for each 	activity and each subject. [deg/s]  
+
+mean(Body_angularVelocity_mean_Y)
+	Y coordinate of the body angular velocity averaged for each 	activity and each subject. [deg/s]     
+
+
+mean(Body_angularVelocity_mean_Z)
+	Z coordinate of the body angular velocity averaged for each 	activity and each subject. [deg/s]     
+
+mean(Body_angularVelocity_stdev_X)
+	Standard deviation of the X coordinate of the body 	angular velocity averaged for each activity and each 	subject. [deg/s]   
+
+mean(Body_angularVelocity_stdev_Y)
+	Standard deviation of the X coordinate of the body 	angular velocity averaged for each activity and each 	subject. [deg/s]  
+
+mean(Body_angularVelocity_stdev_Z)
+	Standard deviation of the X coordinate of the body 	angular velocity averaged for each activity and each 	subject. [deg/s]  
+
+
+
+
+
+
+				Appendix
+
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+
+
+
